@@ -1,55 +1,36 @@
 {
-  "name": "capacitor-branch-deep-links",
-  "version": "3.0.0",
-  "description": "Capacitor plugin for Branch.io deep links",
-  "main": "dist/plugin.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
-  "scripts": {
-    "lint": "npm run prettier -- --check && npm run swiftlint -- lint",
-    "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
-    "swiftlint": "node-swiftlint",
-    "build": "npm run clean && tsc && rollup -c rollup.config.js",
-    "clean": "rimraf ./dist",
-    "watch": "tsc --watch",
-    "examples": "echo 'generate examples'; node ./src/scripts/examples",
-    "prepublishOnly": "npm run build"
+  "_from": "capacitor-branch-deep-links@2.0.0",
+  "_id": "capacitor-branch-deep-links@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-9PwGg8rC31/D2SUY+4IJaRCnE1vxGBLH7uhiDHmx1E+CMoeQ3aVDrbtj8UCjFCoAD4kqIcIyjqB+fbdJ6DrfeQ==",
+  "_location": "/capacitor-branch-deep-links",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "capacitor-branch-deep-links@2.0.0",
+    "name": "capacitor-branch-deep-links",
+    "escapedName": "capacitor-branch-deep-links",
+    "rawSpec": "2.0.0",
+    "saveSpec": null,
+    "fetchSpec": "2.0.0"
   },
-  "author": "Bound State Software <info@boundstatesoftware.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@capacitor/android": "^2.4.0",
-    "@capacitor/core": "^2.4.0",
-    "@capacitor/ios": "^2.4.0",
-    "@ionic/prettier-config": "^1.0.0",
-    "@ionic/swiftlint-config": "^1.0.0",
-    "@rollup/plugin-node-resolve": "^8.1.0",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5",
-    "prettier-plugin-java": "^0.8.0",
-    "rimraf": "^3.0.0",
-    "rollup": "^2.21.0",
-    "swiftlint": "^1.0.1",
-    "typescript": "~3.8.3"
-  },
-  "peerDependencies": {
-    "@capacitor/core": "^2.4.0"
-  },
-  "files": [
-    "dist/",
-    "ios/",
-    "android/",
-    "CapacitorBranchDeepLinks.podspec"
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
-  "keywords": [
-    "branch.io",
-    "capacitor",
-    "capacitor-plugin",
-    "deep-links",
-    "plugin",
-    "native"
-  ],
+  "_resolved": "https://registry.npmjs.org/capacitor-branch-deep-links/-/capacitor-branch-deep-links-2.0.0.tgz",
+  "_shasum": "7dfcb0c27e7ee3d9ea1b7e10b2f10a48f8c266d9",
+  "_spec": "capacitor-branch-deep-links@2.0.0",
+  "_where": "/Users/stevencarlton/Code/careapp",
+  "author": {
+    "name": "Bound State Software",
+    "email": "info@boundstatesoftware.com"
+  },
+  "bugs": {
+    "url": "https://github.com/BranchMetrics/capacitor-branch-deep-links/issues"
+  },
+  "bundleDependencies": false,
   "capacitor": {
     "ios": {
       "src": "ios"
@@ -58,21 +39,60 @@
       "src": "android"
     }
   },
+  "deprecated": false,
+  "description": "Capacitor plugin for Branch.io deep links",
+  "devDependencies": {
+    "@capacitor/android": "^2.4.0",
+    "@capacitor/core": "^2.4.0",
+    "@capacitor/ios": "^2.4.0",
+    "@ionic/prettier-config": "^1.0.0",
+    "@ionic/swiftlint-config": "^1.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "prettier": "^2.0.5",
+    "prettier-plugin-java": "^0.8.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^2.21.0",
+    "swiftlint": "^1.0.1",
+    "typescript": "~3.8.3"
+  },
+  "files": [
+    "dist/",
+    "ios/",
+    "android/",
+    "CapacitorBranchDeepLinks.podspec"
+  ],
+  "homepage": "https://github.com/BranchMetrics/capacitor-branch-deep-links#readme",
+  "keywords": [
+    "branch.io",
+    "capacitor",
+    "capacitor-plugin",
+    "deep-links",
+    "plugin",
+    "native"
+  ],
+  "license": "MIT",
+  "main": "dist/plugin.js",
+  "module": "dist/esm/index.js",
+  "name": "capacitor-branch-deep-links",
+  "peerDependencies": {
+    "@capacitor/core": "^2.4.0"
+  },
   "prettier": "@ionic/prettier-config",
-  "swiftlint": "@ionic/swiftlint-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BranchMetrics/capacitor-branch-deep-links"
+    "url": "git+https://github.com/BranchMetrics/capacitor-branch-deep-links.git"
   },
-  "bugs": {
-    "url": "https://github.com/BranchMetrics/capacitor-branch-deep-links/issues"
+  "scripts": {
+    "build": "npm run clean && tsc && rollup -c rollup.config.js",
+    "clean": "rimraf ./dist",
+    "examples": "echo 'generate examples'; node ./src/scripts/examples",
+    "lint": "npm run prettier -- --check && npm run swiftlint -- lint",
+    "prepublishOnly": "npm run build",
+    "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
+    "swiftlint": "node-swiftlint",
+    "watch": "tsc --watch"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npx lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{css,html,ts,js,java,md}": "prettier --write"
-  }
+  "swiftlint": "@ionic/swiftlint-config",
+  "types": "dist/esm/index.d.ts",
+  "version": "2.0.0"
 }
